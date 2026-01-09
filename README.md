@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 Download this Trained model by click the link:
 
-**Model:** [DeepLabV3](https://pytorch.org/vision/stable/models.html#deeplabv3-resnet101)
+**Model:** [DeepLabV3](https://drive.google.com/drive/folders/1cVd0ska8jKBoUvDvL3Lw8-EGOh0K1_Mt?usp=sharing)
 
 And move into this folder:
 ```bash
@@ -150,7 +150,7 @@ MIT License - see [LICENSE](LICENSE) file.
 
 *Built by Infosys Springboard Data Science Intern Team*
 **Dataset:** [COCO 2017](https://www.kaggle.com/datasets/awsaf49/coco-2017-dataset)[^1]
-**Model:** [DeepLabV3](https://pytorch.org/vision/stable/models.html#deeplabv3-resnet101)[^2]
+**Model:** [DeepLabV3](https://drive.google.com/drive/folders/1cVd0ska8jKBoUvDvL3Lw8-EGOh0K1_Mt?usp=sharing)[^2]
 **App:** [Streamlit](https://streamlit.io)[^4]
 <span style="display:none">[^5]</span>
 
