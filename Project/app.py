@@ -123,6 +123,7 @@ def postprocess_mask(mask_tensor, original_size):
     return mask
 
 def remove_background(image, mask, bg_option):
+    # sourcery skip: extract-duplicate-method
     """Apply mask and create output based on selected background"""
     img_array = np.array(image)
     mask_normalized = mask.astype(np.float32) / 255.0
@@ -158,6 +159,7 @@ def main():
         page_icon="🎨",
         layout="wide"
     )
+    # Add title for the website 
     st.set_page_config(page_title="AI Vision Extract", layout="wide", page_icon="🎯")
     # Header
     st.title("🎨 Image Segmentation & Background Removal")
