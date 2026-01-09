@@ -1,5 +1,3 @@
-<img src="https://r2cdn.perplexity.ai/pplx-full-logo-primary-dark%402x.png" style="height:64px;margin-right:32px"/>
-
 # AI Vision Extract: Subject Isolation via Deep Learning 🖼️✂️
 
 ## Project Overview 🎯
@@ -41,9 +39,7 @@ pip install -r requirements.txt
 
 ### 4. Downloading Trained Model
 
-```bash
 **Model:** [DeepLabV3](https://pytorch.org/vision/stable/models.html#deeplabv3-resnet101)
-```
 
 
 ### 5. Launch Web App 🚀
