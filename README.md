@@ -39,7 +39,14 @@ pip install -r requirements.txt
 
 ### 4. Downloading Trained Model
 
+Download this Trained model by click the link:
+
 **Model:** [DeepLabV3](https://pytorch.org/vision/stable/models.html#deeplabv3-resnet101)
+
+And move into this folder:
+```bash
+cd ai-vision-extract/Project/model/
+```
 
 
 ### 5. Launch Web App 🚀
