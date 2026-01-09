@@ -16,7 +16,7 @@
 
 ```bash
 git clone https://github.com/yourusername/ai-vision-extract.git
-cd ai-vision-extract
+cd ai-vision-extract/Project
 ```
 
 
@@ -39,14 +39,10 @@ pip install -r requirements.txt
 ```
 
 
-### 4. Run Preprocessing \& Training
+### 4. Downloading Trained Model
 
 ```bash
-# Generate clean masks (runs anomaly detection + extraction)
-python preprocess.py
-
-# Train model
-python train.py
+**Model:** [DeepLabV3](https://pytorch.org/vision/stable/models.html#deeplabv3-resnet101)
 ```
 
 
@@ -86,16 +82,14 @@ Deployment: Streamlit web app (batch upload, auto-crop, ZIP export)
 ## 📁 Project Structure
 
 ```
-ai-vision-extract/
+ai-vision-extract/Project
 ├── app.py                    # Streamlit web interface
-├── preprocess.py            # COCO cleaning pipeline
-├── train.py                 # DeepLabV3 training
 ├── data/
-│   └── coco2017/            # Dataset (download separately)
+│   └── test.jpg
 ├── model/
-│   └── deeplabv3_resnet101_coco.pth  # Trained weights
+│   └── deeplabv3_resnet101_coco.pth  # Trained model
 ├── requirements.txt
-└── README.md
+
 ```
 
 
@@ -135,43 +129,11 @@ ai-vision-extract/
 
 ***
 
-## 🔧 Troubleshooting
-
-**❌ "Model weights not found"**
-
-```bash
-python train.py  # Train first
-```
-
-**❌ "Out of memory"**
-
-```bash
-# Reduce batch size in app.py
-BATCH_SIZE = 4  # or 2
-```
-
-**❌ Slow inference**
-
-- Use GPU: Install PyTorch CUDA
-- Enable `torch.backends.cudnn.benchmark = True`
-
-***
-
 ## 📚 Evaluation Metrics[^1]
 
 **Primary:** Intersection over Union (IoU) - **67.4%**
-**Secondary:** Dice Coefficient, Pixel Accuracy - **92.4%**
+**Secondary:** Pixel Accuracy - **92.4%**
 **Visual:** Before/after subject isolation quality
-
-***
-
-## 🤝 Contributing
-
-1. Fork repository
-2. Create feature branch: `git checkout -b feature/amazing-feature`
-3. Commit changes: `git commit -m 'Add amazing feature'`
-4. Push: `git push origin feature/amazing-feature`
-5. Open Pull Request
 
 ***
 
@@ -183,21 +145,9 @@ MIT License - see [LICENSE](LICENSE) file.
 
 ***
 
-*Built with ❤️ for production ML workflows*
+*Built by Infosys Springboard Data Science Intern Team*
 **Dataset:** [COCO 2017](https://www.kaggle.com/datasets/awsaf49/coco-2017-dataset)[^1]
 **Model:** [DeepLabV3](https://pytorch.org/vision/stable/models.html#deeplabv3-resnet101)[^2]
 **App:** [Streamlit](https://streamlit.io)[^4]
 <span style="display:none">[^5]</span>
-
-<div align="center">⁂</div>
-
-[^1]: AI_VisionExtract.pdf
-
-[^2]: deeplabv3_resnet101_image_seg_model_train.ipynb
-
-[^3]: image-data-preprocessing_v3.ipynb
-
-[^4]: app.py
-
-[^5]: AI_VisionExtract.pdf
 
