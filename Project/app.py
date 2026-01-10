@@ -9,10 +9,10 @@ import io
 import zipfile
 import os
 
-# --- PAGE CONFIG ---
+# --- PAGE CONFIG 
 st.set_page_config(page_title="AI Vision Extract", layout="wide", page_icon="🎯")
 
-# --- CUSTOM DARK MODE & UI STYLING ---
+# --- CUSTOM DARK MODE & UI STYLING 
 st.markdown("""
     <style>
     .stApp { background-color: #0E1117; color: #E0E0E0; }
@@ -28,7 +28,7 @@ st.markdown("""
     </style>
     """, unsafe_allow_html=True)
 
-# --- MODEL LOADING ---
+# --- MODEL LOADING 
 @st.cache_resource
 def load_model_local():
     model_path = 'model/deeplabv3_resnet101_coco.pth'
@@ -45,7 +45,7 @@ def load_model_local():
 
 model = load_model_local()
 
-# --- IMAGE DISPLAY UTILITY (SILENCES WARNINGS) ---
+# --- IMAGE DISPLAY UTILITY (SILENCES WARNINGS) 
 def safe_image(img, caption):
     """Displays image using the correct parameter for your Streamlit version."""
     try:
