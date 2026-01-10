@@ -28,8 +28,10 @@ cd ai-vision-extract/Project
 
 ```bash
 python -m venv venv
+
 # Windows:
 venv\Scripts\activate
+
 # macOS/Linux:
 source venv/bin/activate
 
@@ -77,6 +79,7 @@ Model: DeepLabV3 + ResNet101 backbone (81 output classes)
 Preprocessing: Anomaly detection, semantic mask extraction
 Training: SGD (lr=0.01), CrossEntropyLoss, batch_size=8
 Deployment: Streamlit web app (batch upload, auto-crop, ZIP export)
+
 ```
 
 
@@ -149,6 +152,7 @@ MIT License - see [LICENSE](LICENSE) file.
 ***
 
 *Built by Infosys Springboard Data Science Intern Team*
+
 **Dataset:** [COCO 2017](https://www.kaggle.com/datasets/awsaf49/coco-2017-dataset)[^1]
 **Model:** [DeepLabV3](https://drive.google.com/drive/folders/1cVd0ska8jKBoUvDvL3Lw8-EGOh0K1_Mt?usp=sharing)[^2]
 **App:** [Streamlit](https://streamlit.io)[^4]
