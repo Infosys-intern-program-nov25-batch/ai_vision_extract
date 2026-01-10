@@ -2,9 +2,9 @@
 
 ## Project Overview 🎯
 
-**AI Vision Extract** automatically detects and extracts the main subject from any image, producing clean cutouts with customizable backgrounds.  Built with DeepLabV3 ResNet101 and COCO 2017 dataset, it achieves **67.4% mIoU** and **92.4% pixel accuracy**.[^1][^2]
+**AI Vision Extract** automatically detects and extracts the main subject from any image, producing clean cutouts with customizable backgrounds.  Built with DeepLabV3 ResNet101 and COCO 2017 dataset, it achieves **67.4% mIoU** and **92.4% pixel accuracy**.
 
-**Use Cases:** Photography automation, e-commerce, AR/VR, virtual conferencing backgrounds.[^1]
+**Use Cases:** Photography automation, e-commerce, AR/VR, virtual conferencing backgrounds.
 
 ***
 
@@ -20,7 +20,7 @@ cd ai-vision-extract/Project
 
 ### 2. Download Dataset
 
-- [COCO 2017 Dataset](https://www.kaggle.com/datasets/awsaf49/coco-2017-dataset)[^1]
+- [COCO 2017 Dataset](https://www.kaggle.com/datasets/awsaf49/coco-2017-dataset)
 - Extract to `data/coco2017/` (train2017, val2017, annotations)
 
 
@@ -65,7 +65,7 @@ Open `http://localhost:8501` → Upload images → Instant subject extraction!
 | :-- | :-- | :-- |
 | **DeepLabV3-ResNet101** | **67.4%** | **92.4%** |
 
-**Dataset:** 122,206 clean masks from COCO 2017 (99% valid after filtering)[^3]
+**Dataset:** 122,206 clean masks from COCO 2017 (99% valid after filtering)
 
 ***
 
@@ -114,25 +114,25 @@ ai-vision-extract/Project
 
 | Week | Milestone | Deliverables |
 | :-- | :-- | :-- |
-| **1-2** | **Data Pipeline** | Clean masks, anomaly reports [^3] |
-| **3-4** | **Model Training** | DeepLabV3 with 67.4% mIoU [^2] |
-| **5-6** | **Inference** | Model loading, image processing [^4] |
-| **7** | **Web UI** | Streamlit app with batch processing [^4] |
-| **8** | **Documentation** | Full technical report \& demo [^1] |
+| **1-2** | **Data Pipeline** | Clean masks, anomaly reports |
+| **3-4** | **Model Training** | DeepLabV3 with 67.4% mIoU |
+| **5-6** | **Inference** | Model loading, image processing |
+| **7** | **Web UI** | Streamlit app with batch processing |
+| **8** | **Documentation** | Full technical report \& demo |
 
 
 ***
 
 ## 📈 Results Highlights
 
-- **Data Quality:** 99% retention after filtering 123K+ images[^3]
-- **Model Performance:** Industry-competitive 67.4% mIoU on COCO segmentation[^2]
-- **Production Ready:** GPU-optimized inference, batch processing[^4]
-- **User Experience:** Intuitive controls, instant feedback[^4]
+- **Data Quality:** 99% retention after filtering 123K+ images
+- **Model Performance:** Industry-competitive 67.4% mIoU on COCO segmentation
+- **Production Ready:** GPU-optimized inference, batch processing
+- **User Experience:** Intuitive controls, instant feedback
 
 ***
 
-## 📚 Evaluation Metrics[^1]
+## 📚 Evaluation Metrics
 
 **Primary:** Intersection over Union (IoU) - **67.4%**
 **Secondary:** Pixel Accuracy - **92.4%**
@@ -149,8 +149,6 @@ MIT License - see [LICENSE](LICENSE) file.
 ***
 
 *Built by Infosys Springboard Data Science Intern Team*
-**Dataset:** [COCO 2017](https://www.kaggle.com/datasets/awsaf49/coco-2017-dataset)[^1]
-**Model:** [DeepLabV3](https://drive.google.com/drive/folders/1cVd0ska8jKBoUvDvL3Lw8-EGOh0K1_Mt?usp=sharing)[^2]
-**App:** [Streamlit](https://streamlit.io)[^4]
+**Dataset:** [COCO 2017](https://www.kaggle.com/datasets/awsaf49/coco-2017-dataset)
 <span style="display:none">[^5]</span>
 
