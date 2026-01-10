@@ -53,7 +53,7 @@ def safe_image(img, caption):
     except TypeError:
         st.image(img, caption=caption, use_column_width=True)
 
-# --- PROCESSING HELPERS ---
+# --- PROCESSING HELPERS 
 def crop_to_subject(image, mask):
     coords = np.argwhere(mask)
     if coords.size == 0: return image
@@ -94,7 +94,7 @@ def process_image(input_image, bg_choice, brightness, contrast, auto_crop):
 
     return result_img, coverage
 
-# --- MAIN UI ---
+# --- MAIN UI 
 st.markdown('<p class="main-header">AI Vision Extract</p>', unsafe_allow_html=True)
 
 with st.sidebar:
