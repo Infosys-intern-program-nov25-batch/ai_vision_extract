@@ -14,7 +14,7 @@
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/ai-vision-extract.git
+git clone https://github.com/dheepak_ganeshbabu/ai-vision-extract.git
 cd ai-vision-extract/Project
 ```
 
