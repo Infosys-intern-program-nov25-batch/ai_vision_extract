@@ -26,8 +26,8 @@ This project solves the "Heavy Model Deployment" problem by splitting the stack:
 
 ```mermaid
 graph LR
-    User[User Device] -- HTTPS --> Vercel[Frontend (Vercel)]
-    Vercel -- API Request --> Ngrok[Ngrok Tunnel]
-    Ngrok -- Secure Tunnel --> Localhost[Local Machine]
-    Localhost -- Uvicorn --> FastAPI[FastAPI Server]
-    FastAPI -- Inference --> PyTorch[DeepLabV3 Model]
+    User["User Device"] -- HTTPS --> Vercel["Frontend (Vercel)"]
+    Vercel -- "API Request" --> Ngrok["Ngrok Tunnel"]
+    Ngrok -- "Secure Tunnel" --> Localhost["Local Machine"]
+    Localhost -- Uvicorn --> FastAPI["FastAPI Server"]
+    FastAPI -- Inference --> PyTorch["DeepLabV3 Model"]
